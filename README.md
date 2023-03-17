@@ -37,10 +37,10 @@ nano .env
 ```
 ```
 DB_ENGINE=django.db.backends.postgresql
-DB_NAME=test_base
-POSTGRES_USER=test_user
-POSTGRES_PASSWORD=test_pass
-DB_HOST=127.0.0.1
+DB_NAME=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+DB_HOST=db
 DB_PORT=5432
 ```
 ## Запуск контейнеров:
