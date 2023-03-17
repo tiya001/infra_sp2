@@ -8,7 +8,6 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.validators import UnicodeUsernameValidator
 
 from reviews.models import Category, Comment, Genre, Review, Title
-from users.models import User
 from users.validators import username_validator
 
 
