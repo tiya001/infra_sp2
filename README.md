@@ -51,6 +51,13 @@ docker-compose up -d --build
 ```
 docker-compose exec web python manage.py migrate
 ```
+Заполнение БД из фикстуры:
+```
+cp fixtures.json container_id:app/fixtures.json
+```
+```
+docker-compose exec web python manage.py loaddata fixtures.json
+```
 Создание superuser
 ```
 docker-compose exec web python manage.py createsuperuser
@@ -59,7 +66,4 @@ docker-compose exec web python manage.py createsuperuser
 ```
 docker-compose exec web python manage.py collectstatic --no-input 
 ```
-Заполнение БД из фикстуры:
-```
-docker-compose exec web python manage.py loaddata fixtures.json
-```
+
