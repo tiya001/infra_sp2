@@ -6,10 +6,6 @@ from import_export.admin import ImportExportModelAdmin
 from users.models import User
 from reviews.models import Genre, Category, Title, Review, Comment, GenreTitle
 
-
-
-
-
 class UserResource(resources.ModelResource):
 
     class Meta:
