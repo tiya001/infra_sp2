@@ -14,17 +14,6 @@
 ```
 git clone https://github.com/tiya001/infra_sp2.git
 ```
-Cоздать и активировать виртуальное окружение:
-```
-python -m venv venv
-```
-```
-source venv/Scripts/activate
-```
-Установить зависимости из файла requirements.txt:
-```
-pip install -r requirements.txt
-```
 ## Cоздание файла с переменными окружения:
 ```
 cd infra
@@ -65,5 +54,9 @@ docker-compose exec web python manage.py createsuperuser
 Статика:
 ```
 docker-compose exec web python manage.py collectstatic --no-input 
+```
+Запуск проекта:
+```
+docker-compose up -d
 ```
 
